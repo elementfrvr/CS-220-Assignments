@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+		
+	public static void main(String[] args) {
+	
+		Random gen = new Random();
+		int number = gen.nextInt(9)+1;
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Guess a Number \n");
+		int guess = scan.nextInt();
+		if (guess==number)
+			System.out.println("Correct!");
+		else
+			while (guess != number){
+			System.out.println("Incorrect, try again!");
+			guess=scan.nextInt();
+			}
+		System.out.println("You win!");
+	}
+
+}
