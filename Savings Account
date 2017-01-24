@@ -1,0 +1,16 @@
+
+public class SavingsAccount extends Account {
+	private int accountInterest;
+	//Constructor
+	public SavingsAccount(String Customer, double Balance, int Interest){
+		super(Customer,Balance);
+		accountInterest= Interest;
+	}
+	public int getInterest(){
+		return accountInterest;
+	  }
+	public void setInterest(int Interest){
+	    accountInterest = Interest;
+	  }
+	
+}
