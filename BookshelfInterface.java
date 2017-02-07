@@ -1,14 +1,14 @@
 
-public interface BookshelfInterface <T> {
-	public T removeBook();
-	public boolean addBook(T newEntry);
-	public boolean lendBook(T book, String person);
+public interface BookshelfInterface <Book> {
+	public Book removeBook();
+	public boolean addBook(Book newEntry);
+	public boolean lendBook(Book Book, String person);
 	public int getNumberOfBooks();
-	public int copiesAvailable(T book);
+	public int copiesAvailable(Book Book);
 	
 	public boolean isFull();
 	public boolean isEmpty();
 	public void clear();
-	public T removeEntry(int givenIndex);
-	public int getIndexOf(T book);
+	public Book removeEntry(int givenIndex);
+	public int getIndexOf(Book Book);
 }
